@@ -1,39 +1,67 @@
-# 100 Roads Design
+# WorkAdventure Map Starter Kit
 
-![100 Roads Design logo](100roadsdesign-logo.svg)
+![map](./map.png)
 
-100 Roads has been designing and innovating in the education space since 2016. Our founder, Catherine Fraise, first designed a physical campus at Workspace Education in Bethel CT.
+This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
 
-When lockdowns raised new problems, Catherine moved into developing online learning environments.
+To understand how to use this starter kit, follow the tutorial at [https://workadventu.re/map-building](https://workadventu.re/map-building).
 
-100 Roads Design is located in McLeod, Montana and our virtual campuses are created by a global team of digital architects, creatives, community builders and educators.
+## Structure
+* *public*: Static files like PDFs or audio files
+* *src*: Scripts files
+* *tilesets*: All tilesets
+* *map.tmj*: Map file
+* *map.png*: The map thumbnail displayed on the in-game map information
 
-Learn more about us at https://100roadsdesign.com. 
+If you want to use more than one map file, just add the new map file on root or in a folder.
 
-## About the map
+we recommend using 500x500 images for the map thumbnails.
 
+<<<<<<< HEAD
 There are five virtual campuses in this repository.
+=======
+If you are going to create custom websites to embed in the map, please reference the HTML files in the `input` option in *vite.config.js*.
+>>>>>>> parent of b0e273b (readme)
 
-![map](mini-mall-readme.png)
+## Requirements
 
-Map name: Mini mall.
+Node.js version >=17
 
-![map](mini-mall-2-readme.png)
+## Installation
 
-Map name: Mini mall 2.
+With npm installed (comes with [node](https://nodejs.org/en/)), run the following commands into a terminal in the root directory of this project:
 
-![map](start-sole-readme.png)
+```shell
+npm install
+npm run dev
+```
 
-Map name: Start Sole.
+## Test production map
 
-![map](community-share-readme.png)
+You can test the optimized map as it will be in production:
+```sh
+npm run build
+npm run prod
+```
 
-Map name: Community Share.
+## Licenses
 
+<<<<<<< HEAD
 ![map](eco-school-readme.png)
 
 Map name: Eco School.
 
 ## Copyright
+=======
+This project contains multiple licenses as follows:
+>>>>>>> parent of b0e273b (readme)
 
-This map is the sole property of 100 Roads Design LLC. All rights are reserved by 100 Roads Design LLC. All contents of the map may not be reproduced, distributed (for sale or otherwise), or create derivative works of the copyrighted work without the express written permission of 100 Roads Design LLC.
+* [Code license](./LICENSE.code) *(all files except those for other licenses)*
+* [Map license](./LICENSE.map) *(`map.tmj` and the map visual as well)*
+* [Assets license](./LICENSE.assets) *(the files inside the `src/assets/` folder)*
+
+### About third party assets
+
+If you add third party assets in your map, do not forget to:
+1. Credit the author and license with the "tilesetCopyright" property present in the properties of each tilesets in the `map.tmj` file
+2. Add the license text in LICENSE.assets
